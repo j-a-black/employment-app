@@ -1,5 +1,10 @@
 import axios from "axios";
 
-export const client = axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com/posts",
+const KEY = "AELf1Jod3tQ01hmrTVTEpbghG5PEY/eTv4wPdWrtRGs=";
+
+export const clientData = axios.create({
+  baseURL: "https://data.usajobs.gov/",
+  headers: {
+    "Authorization-Key": KEY,
+  },
 });
